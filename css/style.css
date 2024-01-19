@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    font-family: "Playfair Display";
+    background-color: #f1f1f1;
+}
+
+.titulo h1{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0e00df;
+    font-size: 80px;
+}
+
+.container{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #07015e;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+#crono{
+    display: flex;
+    font-size: 60px;
+    font-weight: bold;
+    gap: 2.5rem;
+}
+
+.tempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    min-width: 55px;
+    color: #07015e;
+}
+
+#hora, #minuto, #segundo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 50px;
+    background-color: #07015e;
+    color: #f1f1f1;
+}
+
+#milissegundos{
+    border: 1px solid #d10000;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #d10000;
+    color: #f1f1f1;
+}
+
+.separador{
+    padding: 0 20px;
+    color: #333;
+}
+
+#milissegundos{
+    font-size: 25px;
+}
+
+.btn{
+    display: flex;
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.btn-all{ 
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 10px; 
+    border: 1px solid #0e00df;
+    color: #0e00df;
+    font-weight: bold;    
+    background-color: transparent;
+    transition: all .3s;
+}
+
+.btn-all:active{
+    transform: scale(1.1);
+}
+
+#btnStart{
+    background-color: #0e00df;
+    color: white;
+    cursor: pointer;
+}
